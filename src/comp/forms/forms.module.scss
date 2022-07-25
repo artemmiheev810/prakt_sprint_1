@@ -1,0 +1,32 @@
+@import "../../static/style/const.scss";
+
+.wrap {
+  @extend %wrap;
+}
+.form {
+  max-width: 520px;
+  padding: 90px 73px;
+  background-color: $grey-l;
+  border-radius: 10px;
+  margin: auto;
+  text-align: center;
+  &__title {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 45px;
+    color: $black;
+  }
+  &__field {
+    margin-bottom: 35px;
+    &:last-child {
+      margin-bottom: 70px;
+    }
+  }
+}
+
+.title {
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 45px;
+  color: $black;
+}

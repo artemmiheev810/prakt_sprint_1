@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Condensed:wght@300;400;700&display=swap");
+
+@import "./const.scss";
+
+* {
+  font-family: "Inter", sans-serif;
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+}
+body,
+html {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  position: absolute;
+  width: 5px;
+  height: 8px;
+  background-color: $blue-d;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $blue-l;
+  -webkit-transition: background-color 0.38s ease-in-out;
+  transition: background-color 0.38s ease-in-out;
+  border-radius: 0px;
+  // -webkit-box-shadow: inset 1px 1px 10px #f3faf7;
+  // box-shadow: inset 1px 1px 10px #f3faf7;
+}

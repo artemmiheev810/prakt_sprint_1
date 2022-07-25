@@ -1,0 +1,33 @@
+<div class="sider">
+  <div class="header">
+    <div class="headerTop">
+      <img src={{iconAdd}} class="addButton" alt="new chat" />
+      <div class="profileLink">
+        <span id="linkToOwnProfile">
+          Профиль
+        </span>
+        <img src={{profile}} alt="profile" />
+
+      </div>
+    </div>
+    <div class="searchBlock">
+      {{{search}}}
+      {{{iconSearch}}}
+    </div>
+  </div>
+  <div class="chats">
+    {{#each people}}
+      <div id="{{name}}" class="chatElem">
+        <div class="avatar"> </div>
+        <div class="cont">
+          <div class="name">{{this.name}}</div>
+          <div class="text">{{text}}</div>
+        </div>
+        <div class="data">
+          <div>{{time}}</div>
+          {{#if unreadMes}} <div> {{unreadMes}} </div>{{/if}}
+        </div>
+      </div>
+    {{/each}}
+  </div>
+</div>

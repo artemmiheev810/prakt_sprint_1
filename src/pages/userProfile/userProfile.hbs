@@ -1,0 +1,29 @@
+<div class="profile">
+  <div class="profile__block">
+    <div class="profile__back" id="linkToMain">
+      <img src="{{backLink}}" />
+    </div>
+    <div class="profile__main">
+      <div class="profile__head">
+        {{{avatar}}}
+        <div class="profile__name">{{name}}</div>
+      </div>
+      <div class="profile__body">
+        {{#each data}}
+          <div class="profile__row">
+            <span> {{key}}</span>
+            <span> {{value}}</span>
+          </div>
+        {{/each}}
+      </div>
+      <div class="profile__foot">
+        {{#each actions}}
+          <div class="profile__row profile__foot_row">
+            {{{this}}}
+          </div>
+        {{/each}}
+      </div>
+    </div>
+  </div>
+
+</div>

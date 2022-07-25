@@ -1,0 +1,34 @@
+@import "../../static/style/const.scss";
+
+%buttonCommon {
+  padding: 10px 0;
+  margin: 10px 0;
+  border-radius: 10px;
+  max-width: 200px;
+  color: $white;
+  width: 100%;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.button {
+  &_dark,
+  &_light {
+    @extend %buttonCommon;
+    background: $blue-d;
+    border: 1px solid $blue-d;
+    &:hover {
+      background: $white;
+      color: $blue-d;
+    }
+  }
+  &_light {
+    background: $white;
+    border: 1px solid $white;
+    color: $blue-l;
+    &:hover {
+      background: $blue-l;
+      color: $white;
+    }
+  }
+}

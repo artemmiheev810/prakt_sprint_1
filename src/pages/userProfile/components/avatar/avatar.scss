@@ -1,0 +1,13 @@
+.inputAvatar {
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-position: center;
+  width: 130px;
+  height: 130px;
+  input {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+  }
+}
